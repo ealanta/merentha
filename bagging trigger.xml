@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<TriggerPackage>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>bagging trigger</name>
+			<script>if string.find(getCurrentLine(),"discerning") then
+  --print("compare -- not doing anything")
+elseif string.find(getCurrentLine(),"gives you your light robe") then
+  send("wear robe")
+elseif string.find(getCurrentLine(),"You take Monk's robes of light.") then
+  send("wear robe")
+elseif string.find(getCurrentLine(),"Asmar") then
+  --print("ignoring asmar armor")
+elseif string.find(getCurrentLine()," axe") then
+  send("put axe in bag")
+elseif string.find(getCurrentLine()," sock puppet") then
+  send("put sock in bag")
+elseif string.find(getCurrentLine()," hatchet") then
+  send("put hatchet in bag")
+elseif string.find(getCurrentLine()," longsword") then
+  send("put longsword in bag")
+elseif string.find(getCurrentLine()," belt") then
+  send("put belt in bag")
+elseif string.find(getCurrentLine()," Dragonscale") then
+  send("put dragonscale in bag")
+elseif string.find(getCurrentLine()," polearm") then
+  send("put polearm in bag") 
+elseif string.find(getCurrentLine()," blowgun") then
+  send("put blowgun in bag")
+elseif string.find(getCurrentLine()," cutlass") then
+  send("put cutlass in bag")
+elseif string.find(getCurrentLine()," jerkin") then
+  send("put jerkin in bag")
+elseif string.find(getCurrentLine()," Shield") then
+  send("put shield in bag")
+elseif string.find(getCurrentLine()," scimitar") then
+  send("put scimitar in bag")
+elseif string.find(getCurrentLine()," teeth") then
+  send("put teeth in bag")
+elseif string.find(getCurrentLine()," guts") then
+  send("put guts in bag")
+elseif string.find(getCurrentLine()," halberd") then
+  send("put halberd in bag")
+elseif string.find(getCurrentLine()," Chainmail") then
+  send("put chainmail in bag")
+elseif string.find(getCurrentLine()," Uniform") then
+  send("put uniform in bag")
+elseif string.find(getCurrentLine()," sword") then
+  send("put sword in bag")
+elseif string.find(getCurrentLine()," ringmail") then
+  send("put ringmail in bag")
+elseif string.find(getCurrentLine()," Sword") then
+  send("put sword in bag")
+elseif string.find(getCurrentLine()," shortsword") then
+  send("put shortsword in bag")
+elseif string.find(getCurrentLine()," Axe") then
+  send("put axe in bag")
+elseif string.find(getCurrentLine()," Helmet") then
+  send("put helmet in bag")
+elseif string.find(getCurrentLine()," armour") then
+  send("put armour in bag")
+elseif string.find(getCurrentLine()," pike") then
+  send("put pike in bag")
+elseif string.find(getCurrentLine(),"machete") then
+  send("put machete in bag")
+elseif string.find(getCurrentLine(),"turban") then
+  send("put turban in bag")
+elseif string.find(getCurrentLine()," mask") then
+  send("put mask in bag")
+elseif string.find(getCurrentLine()," dagger") then
+  send("put dagger in bag")
+elseif string.find(getCurrentLine()," shield") then
+  send("put shield in bag")
+elseif string.find(getCurrentLine()," chisel") then
+  send("put chisel in bag")
+elseif string.find(getCurrentLine()," hammer") then
+  send("put hammer in bag")
+elseif string.find(getCurrentLine()," chip") then
+  send("put chip in bag")
+elseif string.find(getCurrentLine()," blackjack") then
+  send("put blackjack in bag")
+elseif string.find(getCurrentLine(),"black velvet bag") then
+  cecho("&lt;red&gt;\n\n************BAG ALERT*************\n\n")
+  send("bury bag")
+elseif string.find(getCurrentLine()," leggings") then
+  send("put leggings in bag")
+elseif string.find(getCurrentLine()," bracers") then
+  send("put bracers in bag")
+elseif string.find(getCurrentLine()," Knife") then
+  send("put knife in bag")
+elseif string.find(getCurrentLine()," armor") then
+  send("put armor in bag")
+elseif string.find(getCurrentLine()," armour") then
+  send("put armour in bag")
+elseif string.find(getCurrentLine()," broadsword") then
+  send("put broadsword in bag")
+elseif string.find(getCurrentLine()," horn") then
+  send("put horn in bag")
+elseif string.find(getCurrentLine()," Armour") then
+  send("put armour in bag")
+elseif string.find(getCurrentLine()," club") then
+  send("put club in bag")
+elseif string.find(getCurrentLine()," mace") then
+  send("put mace in bag")
+elseif string.find(getCurrentLine()," chainmail") then
+  send("put chainmail in bag")
+elseif string.find(getCurrentLine()," helmet") then
+  send("put helmet in bag")
+elseif string.find(getCurrentLine()," maul") then
+  send("put maul in bag")
+elseif string.find(getCurrentLine()," boots") then
+  send("put boots in bag")
+elseif string.find(getCurrentLine()," bow") then
+  send("put bow in bag")
+elseif string.find(getCurrentLine()," quiver") then
+  send("put quiver in bag")
+elseif string.find(getCurrentLine()," warhammer") then
+  send("put warhammer in bag")
+elseif string.find(getCurrentLine()," platemail") then
+  send("put platemail in bag")
+elseif string.find(getCurrentLine()," robe") then
+  send("put robe in bag")
+end</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^You take </string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+			</regexCodePropertyList>
+		</Trigger>
+	</TriggerPackage>
+</MudletPackage>
